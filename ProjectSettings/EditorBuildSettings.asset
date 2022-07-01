@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Level.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_SampleLayout.unity
+    guid: b2fa8882363c4644b93046de18bcbf19
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0ae19b75e64db504db3cbe2bfd47d78c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2a3a94dad2627c44186460b224286a47, type: 2}
