@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
@@ -15,23 +17,29 @@ public class Gun : MonoBehaviour
     public AudioSource audioSource;
 
     public int maxAmmo = 10;
-    private int currentAmmo;
+    public int currentAmmo = 10;
     public float reloadTime = 5f;
     private bool isReloading = false;
 
- 
+    public TMP_Text bulletText;
+
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = clip;
+        bulletText.text = currentAmmo.ToString() + "/10";
     }
     // Update is called once per frame
     void Update()
     {
-
         if (isReloading)
         {
+            bulletText.text = "Reloading...";
             return;
+        } else
+        {
+            bulletText.text = currentAmmo.ToString() + "/10";
         }
 
         if (currentAmmo <= 0)
@@ -49,10 +57,10 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         currentAmmo--; 
-
         muzzleFlash.Play();
         audioSource.Play();
         RaycastHit hit;
+
         if (Physics.Raycast(gunBarrelTransform.position, gunBarrelTransform.forward, out hit, range))
         {
             Enemy enemy = hit.transform.GetComponent<Enemy>();

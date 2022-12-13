@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1e9acf8654bf7db43a1169f77584a98b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Red Undead
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 769d35fcb7800d64d88f8b9cd3a94134, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

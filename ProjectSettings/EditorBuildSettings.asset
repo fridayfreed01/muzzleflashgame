@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_SampleLayout.unity
+    path: Assets/Intro Screen.unity
+    guid: f5b3badee6002984b852e5fe7b76a5e5
+  - enabled: 1
+    path: Assets/Muzzle Flash.unity
     guid: b2fa8882363c4644b93046de18bcbf19
+  - enabled: 1
+    path: Assets/Failure Screen.unity
+    guid: ede1d1fb4deed6246a9c567c44397006
+  - enabled: 1
+    path: Assets/Success Screen.unity
+    guid: fbb5e83e555b4d04da5fc2ed4c5d4a5f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0ae19b75e64db504db3cbe2bfd47d78c, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bec93326a88338c40af7bc92e99f139e, type: 2}

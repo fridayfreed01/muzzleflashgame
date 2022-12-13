@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class Enemy : MonoBehaviour
 {
     public float health = 100f;
@@ -19,11 +20,12 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
 
         StartCoroutine(LoopAudio());
+        
     }
 
     void Update()
     {
-   
+        
     }
 
     IEnumerator LoopAudio()
@@ -56,9 +58,9 @@ public class Enemy : MonoBehaviour
     void Die ()
     {
         IsDead = true;
-
+        
         anim.SetTrigger("death");
         
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 2f);
     }
 }
